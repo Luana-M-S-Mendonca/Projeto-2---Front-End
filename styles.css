@@ -1,0 +1,182 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão para o site */
+    margin: 0;
+    padding: 0;
+    background-color: #f0f7f4; /* Um tom verde muito claro, suave para os olhos */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.wrapper {
+    flex: 1;
+    display: flex;
+}
+
+.sidebar, .login-container, .register-container {
+    width: 100%;
+    max-width: 200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.sidebar {
+    background-color:#457765; /* Um verde escuro para contraste */
+    color: #effffa; /* Um branco pálido para o texto */
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+}
+
+.sidebar h1 {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #effffa;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li a {
+    color: #effffa;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 20px;
+    background-color: #f0f7f4; /* Mantém o fundo claro para o restante do conteúdo */
+    flex: 1;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="tel"], input[type="date"], button {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #a8e6cf; /* Um verde claro suave */
+    color: #000000; /* Cor de texto azul escuro para contraste */
+    border: none;
+    cursor: pointer;
+}
+
+.product-category {
+    background-color: #a8e6cf; /* Um verde claro para os boxes, oferecendo contraste sutil com o fundo */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product-category img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+ul {
+    list-style-type: none; /* Remove o marcador da lista */
+    padding: 0; /* Remove o recuo padrão */
+}
+
+ul li {
+    margin-bottom: 20px;  /* Aumenta o espaço abaixo de cada item */
+}
+
+button:hover {
+    background-color: #7fc6b1; /* Um tom mais escuro de verde para o hover */
+    color: #000000; /* Azul muito escuro para o texto */
+}
+
+button:active {
+    background-color: #66b39b; /* Verde ainda mais escuro para o estado ativo */
+    color: #000000; /* Azul escuro quase preto */
+}
+
+#home h2 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 0; /* Remova ou ajuste a margem superior, se necessário */
+    margin-bottom: 20px; /* Adiciona uma margem inferior para espaçamento */
+    font-family: 'Georgia', serif; /* Define uma fonte diferente para h2 na página home */
+}
+
+footer {
+    background-color: #457765; /* Utilizando o mesmo verde escuro da sidebar */
+    color: #effffa; /* Texto em branco pálido */
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Arial', sans-serif;
+    position: relative; /* Garante que o rodapé seja posicionado em relação ao corpo da página */
+    left: 220px; /* Desloca o rodapé para a direita, alinhando-o horizontalmente com o conteúdo */
+    right: 0;
+    box-sizing: border-box; /* Garante que padding e border sejam incluídos na largura total */
+    bottom: 0;
+    width: calc(100% - 220px);
+}
+
+footer p {
+    margin: 0; /* Remove as margens padrão do parágrafo */
+}
+
+/* Estilos para a página de administração */
+#admin {
+    padding: 20px;
+    text-align: center;
+}
+
+#userForm {
+    margin-bottom: 20px;
+}
+
+#userList {
+    list-style-type: none;
+    padding: 0;
+}
+
+#userList li {
+    background-color: #a8e6cf;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#userList li button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    flex-shrink: 0;
+    width: auto; /* Adiciona largura automática */
+    margin-left: 10px; /* Adiciona margem à esquerda */
+}
+
+#userList li button:hover {
+    background-color: #ff4c3b;
+}
+/* Classe para labels */
+.form-label {
+    display: block;
+    margin: 10px 0 5px;
+    font-size: 12px;
+    color:#8b8b8b;
+    text-align: left; /* Alinha o texto à direita */
+}
+
+/* Estilo específico para a data de nascimento */
+.birthdate-container {
+    text-align: left; /* Alinha todo o contêiner à direita */
+}

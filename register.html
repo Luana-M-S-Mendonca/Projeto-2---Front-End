@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isso é vegano? - Cadastro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="register.js"></script>
+</head>
+<body>
+    <div class="register-container">
+        <h2>Cadastro</h2>
+        <form id="registerForm">
+            <input type="text" id="fullname" name="fullname" placeholder="Nome completo" required>
+            <input type="email" id="email" name="email" placeholder="E-mail" required>
+            <input type="password" id="password" name="password" placeholder="Crie uma senha" required>
+            <input type="tel" id="phone" name="phone" placeholder="Telefone">
+            <div class="birthdate-container">
+                <label for="birthdate" class="form-label">Data de Nascimento</label>
+                <input type="date" id="birthdate" name="birthdate" placeholder="Data de nascimento">
+            </div>
+            <button type="submit">Cadastrar</button>
+            <p><a href="index.html">Voltar para Home</a></p>
+        </form>
+    </div>
+</body>
+</html>
